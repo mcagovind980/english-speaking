@@ -1,0 +1,78 @@
+.previous
+{
+      display: flex;
+      justify-content:space-between;
+      width: 100%;
+      height: 40px;
+      border: 0px solid ;
+      font-size: 30px;
+      padding-bottom:14px;
+    }
+    h3
+ {
+  width: 300px; 
+height: 100px;
+  display: flex;
+  justify-content: center;
+  background:-webkit-linear-gradient(30deg,white,red,yellow,black);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+background-size: 300%;
+transition: 3s ease;
+animation: dem 4s linear infinite;
+padding-top: 10px;  
+}
+  @keyframes dem{
+   0%{
+      background-position: 0% center ;
+   }
+   100%{
+background-position: 300% center;
+   }
+  }
+body{
+  background-color: rgb(0, 0, 0);
+}
+
+.previous button
+     {
+background:linear-gradient(rgb(55, 237, 243),rgb(95, 247, 0)) ;
+width: 80px;
+height: 30px;
+text-align: center;
+border-radius:20px;
+     }
+a
+ {
+    text-decoration: none;
+    color:inherit;
+    color:rgb(64, 0, 255);
+}
+
+
+.container
+  {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(4,1fr);
+      gap:20px;
+      margin-top:80px;
+      text-align: center;   
+}
+.item 
+   {
+  width: 100%;
+  height: 30px;
+  border: 0px solid red;
+  border-radius: 10px;
+  /* background-color: rgb(220, 233, 212); */
+box-shadow: 3px 4px 8px blue;
+background: repeating-conic-gradient(
+  rgb(195, 177, 177) 0deg 10deg,
+  rgb(232, 232, 147) 10deg 20deg
+);
+
+    }
+    .item:hover{
+      transform: scale(1.08);
+    }

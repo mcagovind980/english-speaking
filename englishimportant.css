@@ -1,0 +1,87 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#1e1e2f,#3a3a6a);
+    color:white;
+}
+
+/* TOP BAR */
+.previous{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+}
+
+.previous button{
+    background: linear-gradient(45deg,#00f7ff,#00ff88);
+    border:none;
+    padding:8px 15px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.previous a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+.previous h3{
+    font-size:22px;
+    text-align:center;
+}
+
+/* GRID CONTAINER */
+#ebookContainer{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+/* CARD */
+.ebook{
+    background: #ffffff0f;
+    border-radius:15px;
+    height:120px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    transition:0.3s;
+    backdrop-filter: blur(10px);
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.157);
+}
+
+/* HOVER EFFECT */
+.ebook:hover{
+    transform: translateX(-5px) scale(1.03);
+    background: linear-gradient(135deg,#00c6ff,#0072ff);
+}
+
+/* LINK TEXT */
+.ebook a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    padding:10px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .ebook{
+        height:100px;
+        font-size:14px;
+    }
+
+    .previous h3{
+        font-size:16px;
+    }
+}

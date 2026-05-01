@@ -1,0 +1,128 @@
+
+body{
+    background-color: #000000;
+}
+.previous
+{
+      display: flex;
+      justify-content:space-between;
+      width: 100%;
+      height: 40px;
+      border: 0px solid ;
+      font-size: 30px;
+      padding-bottom:14px;
+    }
+.previous button
+     {
+background:linear-gradient(rgb(55, 237, 243),rgb(95, 247, 0)) ;
+width: 80px;
+height: 30px;
+text-align: center;
+border-radius:20px;
+    }
+    a {
+
+        text-decoration: none;
+
+    }
+   .previous h3{
+    width: 500px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua;   */
+    background:linear-gradient(90deg,rgb(244, 244, 132),rgb(240, 111, 111),rgb(78, 255, 78));
+/* animation-fill-mode: inherit; */
+/* -webkit-animation-fill-mode:text; */
+background-clip: text;
+-webkit-text-fill-color: transparent;
+background-size: 300% auto;
+animation: ani 3s linear infinite;
+    }
+
+@keyframes ani{
+
+0%{
+    background-position: 0% center;
+
+}
+100%{
+    background-position: 200% center;
+}
+
+}
+
+
+.container
+{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(4,1fr);
+      gap:20px;
+      width:100%;
+      margin-top:100px;
+ }
+  
+.item {
+  position: relative;
+  border-radius: 20px;
+} 
+    
+.item1::before {
+  content: "";
+  position:absolute;
+  /* inset:2px; */
+  padding: 1px;
+  border-radius: 20px;
+
+  background: linear-gradient(220deg, rgb(13, 249, 13),rgb(135, 100, 100), rgb(152, 152, 232));
+  -webkit-mask:
+    linear-gradient(#ee41f8 0 0) content-box,
+    linear-gradient(#f5323f 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite:exclude;
+
+background-size: 300% auto;
+          animation: wa 4s linear infinite;
+
+
+        }
+@keyframes wa{
+    0%{
+        background-position: 0% center;
+
+    }
+    100%{
+        background-position: 200% center;
+    }
+}
+
+
+
+
+
+
+.item 
+ {
+    text-align: center;
+      width: 100%;
+      height:50px;
+/* background-size:300% ; */
+padding: 6px ;
+ border-radius: 30px;
+      box-shadow: 3px 3px 15px red;
+      background:linear-gradient(120deg,rgb(248, 114, 114),rgb(211, 220, 211),rgb(241, 239, 117),rgb(156, 156, 215));
+      background-size: 500% auto;
+      animation:ra 19s linear infinite;
+/* content: ; */
+    }
+
+    @keyframes ra{
+        0%{
+            background-position: 0% center;
+
+        }
+        100%{
+            background-position: 200%  center;
+        }
+    } 

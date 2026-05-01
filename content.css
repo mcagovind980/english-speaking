@@ -1,0 +1,180 @@
+
+.text
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(120deg,red, green, yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    animation: we 5s linear infinite;
+margin-top: 30px;
+}
+@keyframes we{
+    0%{
+        background-position: 0% center;
+
+    }
+    100%
+    {
+        background-position: 400% center;
+    }
+}
+
+
+.nav
+{
+    z-index: 6;
+position: relative;
+position: fixed;
+top: -10px;
+/* justify-content: space-between; */
+height: 40px;
+/* border: .1px solid ; */
+width: 100%;
+background-color:aquamarine ;
+box-shadow: 3px 4px 7px ;
+border-radius: 10px;
+padding-bottom:5px;
+}
+.nav:hover{
+    /* transition: 2s red ease-in linear; */
+background-color: rgb(249, 246, 60);
+}
+
+ul
+{
+list-style-type: none;
+width: auto;
+height: auto;
+display: flex;
+flex-direction:row ;
+justify-content: space-between;
+gap:10px;
+   }
+.nav a
+  {
+    text-decoration: none;
+    color: inherit;
+    text-shadow: 3px 5px 8px black;
+  color:navy;
+  }
+ul li:hover 
+   {
+   transform:scale(1.2);
+   background-color: rgb(223, 255, 224);
+   /* border-radius: 5px ; */
+    
+  }
+
+
+
+
+.container
+    {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr,1fr);
+    width: 100%;
+    gap:17px;
+    /* column-gap: 2px; */
+    /* row-gap: 20px;   */
+    }
+   .item
+   {
+   width:100%;
+   /* border: 1px solid red; */
+   height: 70px;
+   background-color: aqua;
+   display: flex;
+    justify-content: center;   
+/* text-align: center;     */
+    align-items: center;
+box-shadow: 3px 4px 10px red;
+/* transform: rotateX(30deg);   */
+  transition: transform 0.3s ease;
+border-radius: 20px;
+}
+.item:hover
+{
+/* transition-property: width, height; */
+/* transition-duration: 3s, 3s;
+transition-timing-function: ease-in-out, ease-in-out;
+transition-delay: 0s, 0s; */
+transform: scale(1.05);
+}
+
+
+   item 
+   {
+   /* { 
+    width: 60px;
+    border: 1px solid red;
+    height: 300%; */
+
+   width:100%;
+   /* border: 1px solid red; */
+    height: 70px;
+   background-color: aqua;
+   display: flex;
+    justify-content: center;   
+
+     
+         align-items: center;
+  box-shadow: 3px 4px 10px red;
+/* transform: rotateX(30deg);   */
+  transition: transform 0.3s ease;
+border-radius: 20px;
+}
+item:hover
+{
+/* transition-property: width, height; */
+/* transition-duration: 3s, 3s;
+transition-timing-function: ease-in-out, ease-in-out;
+transition-delay: 0s, 0s; */
+transform: scale(1.05);
+}
+
+body{
+    background-color: black;
+}
+    .ebook
+   {
+
+   width:100%;
+   border: 1px solid red;
+   height: 70px;
+   background-color: aqua;
+   display: flex;
+    justify-content: center;   
+border-radius: 20px;
+       align-items: center;
+box-shadow: 3px 4px 20px red;
+/* transform: rotateX(30deg);   */
+  transition: transform 0.3s ease;
+}
+.ebook:hover
+{
+/* transition-property: width, height; */
+/* transition-duration: 3s, 3s;
+transition-timing-function: ease-in-out, ease-in-out;
+transition-delay: 0s, 0s; */
+transform: scale(1.05);
+}
+
+
+
+    a   {
+     text-decoration: none;
+     color: inherit;
+
+
+      }
+
+.ebook img
+     {
+    display: contents;
+    visibility: hidden;
+    }

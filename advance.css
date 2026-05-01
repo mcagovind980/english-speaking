@@ -1,0 +1,112 @@
+body{
+   background-color: blue;
+}
+.previous
+     {
+
+      display: flex;
+      justify-content:space-between;
+      width: 100%;
+      height: 40px;
+      border: 0px solid ;
+      font-size: 30px;
+      padding-bottom:14px;
+   
+      }
+.previous button
+       {
+   background:linear-gradient(rgb(55, 237, 243),rgb(95, 247, 0)) ;
+   width: 80px;
+   height: 30px;
+   text-align: center;
+   border-radius:20px;
+     
+       }
+
+a       {
+ 
+         text-decoration: none;
+ 
+         color:inherit;
+ 
+         color:black;    
+ 
+         text-shadow: 3px 4px 10px blue;
+        }
+h3
+ {
+  width: 300px; 
+height: 100px;
+  display: flex;
+  justify-content: center;
+  background:-webkit-linear-gradient(30deg,white,red,yellow,black);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+background-size: 300%;
+transition: 3s ease;
+animation: dem 4s linear infinite;
+padding-top: 10px;  
+}
+  @keyframes dem{
+   0%{
+      background-position: 0% center ;
+   }
+   100%{
+background-position: 300% center;
+   }
+  }
+
+
+
+.pdf
+     {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(4,1fr);
+      gap:10px;
+      width:100%;
+      margin-top:100px;
+     }
+.pdf .ebook
+     {
+      width: 90%;
+      height:200px;
+      border-radius: 30px;
+      box-shadow: 3px 3px 15px red;
+     }
+.pdf img
+     {
+      border-radius: 30px;
+      width:186px;
+     }
+
+.container
+     {
+   
+   
+     width: 100%;
+     height: 500px;
+     display: grid;
+     grid-template-columns: repeat(5,1fr);
+     grid-template-rows: repeat(5,1fr);
+     margin-top: 60px;
+        gap:29px;
+
+      }
+
+.container .item
+     {
+
+      width:100%;
+      height: 70px;
+      border-radius:20px;
+      background:radial-gradient(rgb(246, 246, 243),rgb(4, 255, 217),rgb(143, 245, 10),rgb(241, 229, 237));
+      padding-top: 15px;
+      padding-left: 15px;
+      box-shadow: 3px 5px 9px  rgb(208, 32, 32);
+
+      }
+ .item:hover
+      {
+      transform: scale(1.08);
+      }

@@ -1,0 +1,99 @@
+.previous
+{
+      display: flex;
+      justify-content:space-between;
+      width: 100%;
+      height: 40px;
+      border: 0px solid ;
+      font-size: 30px;
+      padding-bottom:14px;
+    }
+    body{
+  background-color: rgb(0, 0, 0);
+}
+
+    h3
+ {
+  width: 300px; 
+height: 100px;
+  display: flex;
+  justify-content: center;
+  background:-webkit-linear-gradient(30deg,white,red,yellow,black);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+background-size: 300%;
+transition: 3s ease;
+animation: dem 4s linear infinite;
+padding-top: 10px;  
+}
+  @keyframes dem{
+   0%{
+      background-position: 0% center ;
+   }
+   100%{
+background-position: 300% center;
+   }
+  }
+
+.previous button
+     {
+background:linear-gradient(rgb(55, 237, 243),rgb(95, 247, 0)) ;
+width: 15%;
+height: 30px;
+text-align: center;
+border-radius:20px;
+     }
+a
+ {
+    text-decoration: none;
+    color:inherit;
+font-size: 20px;
+}
+
+.pdf
+{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(4,1fr);
+      gap:10px;
+      width:100%;
+      margin-top:100px;
+}
+.pdf .ebook
+{
+      width: 90%;
+      height:200px;
+      border-radius: 30px;
+      box-shadow: 3px 3px 15px red;
+}
+.pdf img
+{
+      border-radius: 30px;
+width:186px;
+}
+
+.container
+{
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      grid-template-rows: repeat(5,1fr);
+margin-top: 40px;
+width: 100%;
+gap: 10px;
+}
+.item
+{
+      border-radius: 20px;
+      width: 100%;
+      height: 40px;
+      background:repeating-radial-gradient(circle, rgb(208, 199, 199) 0px, rgb(220, 207, 207) 10px, rgb(216, 235, 216) 20px, rgb(202, 227, 202) 30px);
+      border: 0px solid;
+text-align: center;
+box-shadow:1px 4px 10px blue;
+padding-top: 20px;
+}
+.container .item:hover
+  {
+    box-shadow: 3px 4px 10px rgb(4, 3, 4);
+    transform: scale(1.09);
+  }
