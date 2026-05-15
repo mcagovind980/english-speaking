@@ -92,7 +92,7 @@ body{
  {
 margin-top: 60px;
 margin-left: 300px;
-  width: 300px; 
+  width: 600px; 
 height: 100px;
   display: flex;
   justify-content: center;
@@ -102,7 +102,7 @@ text-align: center;
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 background-size: 300%;
-transition: 14s ease;
+transition: 13s ease;
 animation: dem 4s linear infinite;
 
 padding-top: 10px;  
